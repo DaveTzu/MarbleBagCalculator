@@ -92,6 +92,7 @@ public class MarbleBagManager : MonoBehaviour
 
         // Use the UIManager to refresh text fields
         uiManager.UpdateColorPercentages(redPct, greenPct, bluePct, yellowPct, purplePct, totalMarbles);
+        uiManager.UpdatePeekPanelIfOpen(marbleBag.GetAllMarbles());
     }
 
     public void TogglePeekPanel()
