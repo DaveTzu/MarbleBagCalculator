@@ -27,6 +27,13 @@ public class MarbleBag
         return drawn;
     }
 
+    public List<Marble> GetAllMarbles()
+    {
+        // Return a copy or the internal list. 
+        // If you return the internal list directly, be mindful of external modifications.
+        return marbles;
+    }
+
     public int GetTotalMarbles()
     {
         return marbles.Count;
